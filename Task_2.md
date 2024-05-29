@@ -39,7 +39,7 @@ funct7 [31:25] | rs2 [24:20] | rs1 [19:15] | funct3 [14:12] | rd [11:7] | opcode
 
 In RISC-V instructions, `funct3` and `funct7` are fields used to specify the exact operation to be performed within certain instruction types.
 
-### Funct3
+#### Funct3
 
 - **Purpose:** Distinguishes between different variants of operations within the same instruction type.
 - **Size:** 3 bits.
@@ -49,7 +49,7 @@ In RISC-V instructions, `funct3` and `funct7` are fields used to specify the exa
   - In S-Type instructions, `funct3` specifies the type of store operation (e.g., SB, SH, SW).
   - In B-Type instructions, `funct3` determines the branch condition type (e.g., BEQ, BNE).
 
-### Funct7
+#### Funct7
 
 - **Purpose:** Works in conjunction with `funct3` to further specify the operation, mainly for R-Type instructions.
 - **Size:** 7 bits.
@@ -121,7 +121,7 @@ Here are detailed examples of various RISC-V instruction types and their corresp
  - **Type:** R
  - **32-bit Code:** `0100000 00010 00001 000 00111 0110011`
 
-[Add similar details for the remaining R-Type Instructions]
+[remaining R-Type Instructions]
 
 ### I-Type Instructions
 
@@ -137,7 +137,7 @@ Here are detailed examples of various RISC-V instruction types and their corresp
  - **Type:** S
  - **32-bit Code:** `0000000 00010 00011 010 00001 0100011`
 
-[Add similar details for the remaining S-Type Instructions]
+[ remaining S-Type Instructions]
 
 ### B-Type Instructions
 
@@ -145,7 +145,7 @@ Here are detailed examples of various RISC-V instruction types and their corresp
  - **Type:** B
  - **32-bit Code:** `000000 000101 00001 001 00000 1100011`
 
-[Add similar details for the remaining B-Type Instructions]
+[remaining B-Type Instructions]
 
 ### U-Type Instructions
 
@@ -153,7 +153,7 @@ Here are detailed examples of various RISC-V instruction types and their corresp
  - **Type:** U
  - **32-bit Code:** `000000000100 01111 0110111`
 
-[Add similar details for the remaining U-Type Instructions]
+[ remaining U-Type Instructions]
 
 ### J-Type Instructions
 
@@ -161,7 +161,7 @@ Here are detailed examples of various RISC-V instruction types and their corresp
  - **Type:** J
  - **32-bit Code:** `00000000011001000 11111 1101111`
 
-[Add similar details for the remaining J-Type Instructions]
+[ remaining J-Type Instructions]
 
 These examples showcase the diverse range of instruction types and their formats in the RISC-V architecture. Understanding these formats is crucial for programming and optimizing software for RISC-V processors.
 

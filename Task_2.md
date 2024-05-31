@@ -66,46 +66,91 @@ These fields are essential for correctly interpreting and executing instructions
 - **Used for:** Operations with immediate values, load instructions.
 - **Operands:** One source register, one destination register, and an immediate value.
 - **Format:**
-
-
+ ```
+imm[11:0] | rs1 [19:15] | funct3 [14:12] | rd [11:7] | opcode [6:0]
+```
 - **Example:** `ADDI rd, rs1, imm`
+- **Example:** `ADDI r12, r4, 5`
+  - **32-bit Code:** `000000000101 00100 000 01100 0010011`
+
+Additional I-Type Instructions:
+- **LW r10, 8(r5)**
+  - **32-bit Code:** `000000001000 00101 010 01010 0000011`
+- **SLTI r11, r3, 15**
+  - **32-bit Code:** `000000001111 00011 010 01011 0010011`
 
 ## S-Type (Store Type)
 
 - **Used for:** Store instructions.
 - **Operands:** Two source registers and an immediate value.
 - **Format:**
-
+```
+imm[11:5] | rs2 [24:20] | rs1 [19:15] | funct3 [14:12] | imm[4:0] | opcode [6:0]
+```
 
 - **Example:** `SW rs2, imm(rs1)`
+- **Example:** `SW r3, r1, 2`
+  - **32-bit Code:** `0000000 00010 00011 010 00001 0100011`
+
+Additional S-Type Instructions:
+- **SB r4, 3(r2)**
+  - **32-bit Code:** `0000000 00011 00100 000 00010 0100011`
+- **SH r5, 10(r3)**
+  - **32-bit Code:** `0000000 01010 00101 001 00011 0100011`
 
 ## B-Type (Branch Type)
 
 - **Used for:** Conditional branch instructions.
 - **Operands:** Two source registers and an immediate value for the offset.
 - **Format:**
-
+```
+imm[12] | imm[10:5] | rs2 [24:20] | rs1 [19:15] | funct3 [14:12] | imm[4:1] | imm[11] | opcode [6:0]
+```
 
 - **Example:** `BEQ rs1, rs2, imm`
+- **Example:** `BNE r0, r1, 20`
+  - **32-bit Code:** `000000 000101 00001 001 00000 1100011`
+
+Additional B-Type Instructions:
+- **BEQ r2, r3, 12**
+  - **32-bit Code:** `000000 001100 00011 000 00010 1100011`
+- **BLT r4, r5, -8**
+  - **32-bit Code:** `111111 11000 00101 100 00100 1100011`
 
 ## U-Type (Upper Immediate Type)
 
 - **Used for:** Instructions that involve large immediate values, such as loading the upper 20 bits.
 - **Operands:** One destination register and a 20-bit immediate value.
 - **Format:**
-
+```
+imm[31:12] | rd [11:7] | opcode [6:0]
+```
 
 - **Example:** `LUI rd, imm`
+- **Example:** `LUI r15, 100`
+  - **32-bit Code:** `000000000100 01111 0110111`
+
+Additional U-Type Instructions:
+- **AUIPC r20, 5000**
+  - **32-bit Code:** `0000000010011101 10100 0010111`
 
 ## J-Type (Jump Type)
 
 - **Used for:** Jump and link instructions.
 - **Operands:** One destination register and an immediate value for the offset.
 - **Format:**
-
-
+```
+imm[20] | imm[10:1] | imm[11] | imm[19:12] | rd [11:7] | opcode [6:0]
+```
 
 - **Example:** `JAL rd, imm`
+- **Example:** `JAL r31, 200`
+  - **32-bit Code:** `00000000011001000 11111 1101111`
+
+Additional J-Type Instructions:
+- **JAL r10, 1024**
+  - **32-bit Code:** `0000001000000000 01010 1101111`
+
 
 ### Applying to Given Instructions
 

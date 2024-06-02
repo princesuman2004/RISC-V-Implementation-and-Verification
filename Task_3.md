@@ -226,3 +226,49 @@ always @(posedge clk) begin
 ```
 ## Verification using GTKWave output waveforms:
 
+- Final Output
+![Screenshot from 2024-06-02 23-22-06](https://github.com/princesuman2004/VSD_Mini_Internship/assets/128327318/d19fb9ec-7437-4bab-ae94-de3efcdbdab9)
+- Instruction 1: `add r6,r2,r1`
+- Instruction 2:sub r7,r1,r2
+- Instruction 3:and r8,r1,r3
+
+- Instruction 4:or r9,r2,r5
+
+
+- Instruction 5:xor r10,r1,r4
+
+
+
+- Instruction 6:slt r11,r2,r4
+
+
+
+- Instruction 7:addi r12,r4,5
+
+
+- Instruction 8:sw r3,r1,2
+
+
+- Instruction 9:lw r13,r1,2
+
+
+- Instruction 10:beq r0,r0,15
+
+After branching, performing 
+- Instruction 11:add r14,r2,r2
+
+
+
+- Instruction 12:bne r0,r1,20
+
+After branching, performing 
+- Instruction 13:addi r12,r4,5
+
+
+- Instruction 14:sll r15,r1,r2(2)
+
+
+
+- Instruction 15:srl r16,r14,r2(2)
+
+

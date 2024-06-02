@@ -20,7 +20,7 @@
 ![Screenshot from 2024-06-02 22-42-55](https://github.com/princesuman2004/VSD_Mini_Internship/assets/128327318/ce9a482f-0e61-4450-bbec-a0a823200bb0)
 
 
-
+## Analysing the test file (iitb_rv32i.v):
 ### Module Definition
 ```verilog
 module iiitb_rv32i(clk, RN, NPC, WB_OUT);
@@ -251,32 +251,30 @@ always @(posedge clk) begin
 
 
 - Instruction 7:`addi r12,r4,5`
+![Screenshot from 2024-06-03 01-12-40](https://github.com/princesuman2004/VSD_Mini_Internship/assets/128327318/a6bd0f1d-1211-4eb5-a7ad-206d1ea1e6dc)
 
 
+- Instruction 8:`sw r3,r1,2`
+![Screenshot from 2024-06-03 01-15-24](https://github.com/princesuman2004/VSD_Mini_Internship/assets/128327318/b0407cc0-59ae-43be-af49-f070b189ebcb)
 
-- Instruction 8:sw r3,r1,2
 
-
-- Instruction 9:lw r13,r1,2`
-
+- Instruction 9:`lw r13,r1,2`
+  *Value of ALU output doesn't change as it is not an ALU operation.*
+![Screenshot from 2024-06-03 01-29-04](https://github.com/princesuman2004/VSD_Mini_Internship/assets/128327318/f41d632c-29ed-47fb-9ebf-96f22c80a906)
 
 - Instruction 10:`beq r0,r0,15`
+
+![Screenshot from 2024-06-03 01-41-28](https://github.com/princesuman2004/VSD_Mini_Internship/assets/128327318/4bfd4c2e-a921-452f-bdbd-7b18c7b69d20)
 
 After branching, performing 
 - Instruction 11:`add r14,r2,r2`
 
+![Screenshot from 2024-06-03 01-42-23](https://github.com/princesuman2004/VSD_Mini_Internship/assets/128327318/664bf1ee-af7d-4af8-9690-478e4d16c9d5)
 
-
-- Instruction 12:bne r0,r1,20
-
-After branching, performing 
-- Instruction 13:addi r12,r4,5
-
-
-- Instruction 14:sll r15,r1,r2(2)
+## Conlcusion 
+Implementation and verification of a verilog code is done using GTKWave.
 
 
 
-- Instruction 15:srl r16,r14,r2(2)
 
 

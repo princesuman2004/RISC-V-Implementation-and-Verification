@@ -229,7 +229,8 @@ always @(posedge clk) begin
 - Final Output
 ![Screenshot from 2024-06-02 23-22-06](https://github.com/princesuman2004/VSD_Mini_Internship/assets/128327318/d19fb9ec-7437-4bab-ae94-de3efcdbdab9)
 - Instruction 1: `add r6,r2,r1`
- ![Screenshot from 2024-06-03 00-20-07](https://github.com/princesuman2004/VSD_Mini_Internship/assets/128327318/d104cb40-f4dd-43e8-b1d3-afed6c676f37)
+
+  ![Screenshot from 2024-06-03 00-20-07](https://github.com/princesuman2004/VSD_Mini_Internship/assets/128327318/d104cb40-f4dd-43e8-b1d3-afed6c676f37)
 
 - Instruction 2:`sub r7,r1,r2`
   *important thing to note result comes at next cycle after getting instructions.*

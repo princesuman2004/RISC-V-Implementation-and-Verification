@@ -1,3 +1,5 @@
+# BitNetMCU
+
 **Objective:**
 
 The goal is to create a pipeline for training and inference of low-bit quantized neural networks suitable for running on a CH32V003 RISC-V microcontroller. Using the MNIST dataset, the aim is to achieve high test accuracy while leveraging the microcontroller's limited resources effectively.

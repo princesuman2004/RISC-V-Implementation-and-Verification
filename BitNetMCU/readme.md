@@ -16,7 +16,7 @@ The goal is to create a pipeline for training and inference of low-bit quantized
 - Knowledge of the MNIST dataset and its preprocessing.
 - Ability to optimize inference for low-resource environments.
 
-#### VSDSquadron Mini Board Specifications
+### VSDSquadron Mini Board Specifications
 
 | Feature                      | Description                                                                                      |
 |------------------------------|--------------------------------------------------------------------------------------------------|
@@ -42,7 +42,10 @@ The goal is to create a pipeline for training and inference of low-bit quantized
 
 ![image](https://github.com/princesuman2004/BitNetMCU/assets/128327318/b2db779d-715c-419e-82d6-fa8269d62f3b)
 
-
-
+### Connections:
+- A camera connected to the board to relay data.( For testing ,once the MNIST data has been tested)
+- An LED Display to output the data.
+- Power Connection.
+![image](https://github.com/princesuman2004/BitNetMCU/assets/128327318/66a747e9-77bc-4df5-82db-ca1e9cb58949)
 
 

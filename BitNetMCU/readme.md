@@ -16,7 +16,7 @@ The goal is to create a pipeline for training and inference of low-bit quantized
 - Knowledge of the MNIST dataset and its preprocessing.
 - Ability to optimize inference for low-resource environments.
 
-### VSDSquadron Mini Board Specifications
+### VSD Squadron Mini Board Specifications
 
 | Feature                      | Description                                                                                      |
 |------------------------------|--------------------------------------------------------------------------------------------------|
@@ -38,6 +38,7 @@ The goal is to create a pipeline for training and inference of low-bit quantized
 | **Sink Current per I/O Pin** | 8mA                                                                                              |
 | **Clock speed**              | Processor: 24MHz                                                                                 |
 | **Memory**                   | SRAM: 2kb on-chip volatile SRAM, 16kb external program memory                                    |
+
 
 
 ![image](https://github.com/princesuman2004/BitNetMCU/assets/128327318/b2db779d-715c-419e-82d6-fa8269d62f3b)

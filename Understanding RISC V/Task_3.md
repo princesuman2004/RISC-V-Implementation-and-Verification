@@ -150,7 +150,8 @@ always @(posedge clk) begin
                     XOR: EX_MEM_ALUOUT <= ID_EX_A ^ ID_EX_B;
                     SLT: EX_MEM_ALUOUT <= (ID_EX_A < ID_EX_B) ? 32'd1 : 32'd0;
                 endcase
-            end else begin
+              end
+            else begin
                 case (ID_EX_IR[14:12])
                     ADDI: EX_MEM_ALUOUT <= ID_EX_A + ID_EX_IMMEDIATE;
                     SUBI: EX_MEM_ALUOUT <= ID_EX_A - ID_EX_IMMEDIATE;

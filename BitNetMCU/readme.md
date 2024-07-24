@@ -46,6 +46,7 @@ The goal is to create a pipeline for training and inference of low-bit quantized
 - A camera connected to the board to relay data.( For testing ,once the MNIST data has been tested)
 - An LED Display to output the data.
 - Power Connection.
+  
 ![image](https://github.com/princesuman2004/BitNetMCU/assets/128327318/66a747e9-77bc-4df5-82db-ca1e9cb58949)
 
 
